@@ -1,14 +1,11 @@
 namespace inheritance
 {
-  public class Cessna
+  public class Cessna : GasVehicle
   {
-    public double FuelCapacity { get; set; }
-    public string MainColor { get; set; }
-    public int MaximumOccupancy { get; set; }
 
-    public void RefuelTank()
+    public override void Drive()
     {
-      System.Console.WriteLine("Refueling gasoline...");
+      System.Console.WriteLine("Zoom!");
     }
   }
 }
